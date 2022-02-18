@@ -1,0 +1,9 @@
+<!-- 滚动通知区域 -->
+<van-notice-bar
+  left-icon="volume-o"
+  scrollable="{{ true }}"
+  text="上传图片后，图片即可转换为表情包格式。长按分享给好友，添加到表情包。🐾"
+/>
+<view>
+    <van-uploader file-list="{{ fileList }}" bind:after-read="afterRead" />
+</view>

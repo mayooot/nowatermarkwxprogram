@@ -1,0 +1,38 @@
+<!-- 图片 -->
+<view class="index_image">
+  <van-image
+    width="15rem"
+    height="15rem"
+    fit="contain"
+    lazy-load
+    src="https://richarli.oss-cn-beijing.aliyuncs.com/images/src=http___hbimg.b0.upaiyun.com_8a3ff5ab76d742e424d12bd1534904e257bd9ca417311-8TkpNy_fw658&refer=http___hbimg.b0.upaiyun.jfif"
+  />
+</view>
+
+<!-- 下载和粘贴链接 -->
+<view class="index_text">
+  <van-row gutter="150" >
+    <van-col span="12">
+      <text style="color: #409EFF">▍</text>下载
+    </van-col>
+    <van-col span="12" bindtap="copyText">
+      <text style="color: #4895ef">粘贴链接</text>
+    </van-col>
+  </van-row>
+</view>
+
+<!-- 输入框 -->
+<view class="index_input">
+  <van-cell-group>
+    <van-field
+      value="{{ inputUrl }}"
+      clearable
+      placeholder="请输入分享链接🔗"
+      border="{{ true }}"
+    />
+</van-cell-group>
+</view>
+<!-- 下载按钮 -->
+<view class="index_download">
+  <van-button type="primary" block bindtap="download">下载</van-button>
+</view>

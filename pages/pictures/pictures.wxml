@@ -1,0 +1,21 @@
+<!-- 滚动通知区域 -->
+<van-notice-bar
+  left-icon="volume-o"
+  scrollable="{{ false }}"
+  text="点击图片进行预览，长按保存到手机。👻"
+/>
+<!-- 图片展示区域 -->
+<van-grid column-num="2" gutter="{{ 10 }}" border="{{false}}">
+    <van-grid-item use-slot wx:for="{{imageList}}" wx:for-item="image" wx:for-index="index">
+      <van-image
+      width="10rem"
+      height="19rem"
+      fit="cover"
+      radius="10rpx"
+      src="{{image}}"
+      bindtap="previewImage"
+      data-previewUrl="{{image}}"
+      >
+      </van-image>
+    </van-grid-item>
+  </van-grid>

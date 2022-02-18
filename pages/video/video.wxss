@@ -1,0 +1,18 @@
+
+.index_image {
+    display:flex;                    
+    justify-content: center;        
+    align-items:center;              
+}
+
+
+.index_text {
+    margin: 10rpx;
+}
+
+
+
+.index_download {
+    width: 95vw;
+    margin: 0 auto;
+}

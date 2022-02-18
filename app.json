@@ -1,0 +1,59 @@
+{
+  "pages":[
+    "pages/sticker/sticker",
+    "pages/video/video", 
+    "pages/donate/donate",
+    "pages/pictures/pictures"
+  ], 
+  "window":{
+    "backgroundTextStyle": "dark",
+    "backgroundColor": "#ffffff",
+    "navigationBarBackgroundColor": "#409EFF",
+    "navigationBarTitleText": "米熊去水印工具",
+    "navigationBarTextStyle":"white",
+    "enablePullDownRefresh": true
+  },
+  "tabBar": {
+    "color": "#515151", 
+    "selectedColor": "#67C23A",
+    "backgroundColor": "#fafafa",
+    "position": "bottom",
+    "borderStyle": "black",
+    "list": [
+      {
+        "pagePath": "pages/video/video",
+        "text": "去水印",
+        "iconPath": "./icons/video.png",
+        "selectedIconPath": "./icons/video_selection.png"
+      },
+      {
+        "pagePath": "pages/sticker/sticker",
+        "text": "表情包",
+        "iconPath": "./icons/sticker.png",
+        "selectedIconPath": "./icons/sticker_selection.png"
+      },
+      {
+        "pagePath": "pages/donate/donate",
+        "text": "捐赠",
+        "iconPath": "./icons/donate.png",
+        "selectedIconPath": "./icons/donate_selection.png"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json",
+  "usingComponents": {
+    "van-button": "@vant/weapp/button/index",
+    "van-field": "@vant/weapp/field/index",
+    "van-row": "@vant/weapp/row/index",
+    "van-col": "@vant/weapp/col/index",
+    "van-image": "@vant/weapp/image/index",
+    "van-loading": "@vant/weapp/loading/index",
+    "van-picker": "@vant/weapp/picker/index",
+    "van-popup": "@vant/weapp/popup/index",
+    "van-grid": "@vant/weapp/grid/index",
+    "van-grid-item": "@vant/weapp/grid-item/index",
+    "van-divider": "@vant/weapp/divider/index",
+    "van-notice-bar": "@vant/weapp/notice-bar/index",
+    "van-uploader": "@vant/weapp/uploader/index"
+  }
+}
